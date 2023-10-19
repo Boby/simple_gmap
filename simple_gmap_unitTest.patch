@@ -1,0 +1,26 @@
+diff --git a/tests/src/FunctionalJavascript/SimpleGmapTest.php b/tests/src/FunctionalJavascript/SimpleGmapTest.php
+index bc78075..eee63f2 100644
+--- a/tests/src/FunctionalJavascript/SimpleGmapTest.php
++++ b/tests/src/FunctionalJavascript/SimpleGmapTest.php
+@@ -57,7 +57,7 @@ class SimpleGmapTest extends WebDriverTestBase {
+   /**
+    * {@inheritdoc}
+    */
+-  protected function setUp() {
++  protected function setUp(): void {
+     parent::setUp();
+ 
+     // Create and login as an authenticated user.
+diff --git a/tests/src/Kernel/SimpleGMapFormatterTest.php b/tests/src/Kernel/SimpleGMapFormatterTest.php
+index 60bad75..7ee0eb6 100644
+--- a/tests/src/Kernel/SimpleGMapFormatterTest.php
++++ b/tests/src/Kernel/SimpleGMapFormatterTest.php
+@@ -31,7 +31,7 @@ class SimpleGMapFormatterTest extends EntityKernelTestBase {
+   /**
+    * {@inheritdoc}
+    */
+-  protected function setUp() {
++  protected function setUp(): void {
+     parent::setUp();
+     $this->installConfig('node');
+     $this->installEntitySchema('node');
